@@ -22,7 +22,7 @@
         "classmap": [],
         "files": [],
         "psr-4": {
-            "Techcon\\Nestedsets": "src/"
+            "Techcon\\Nestedsets\\": "src/"
         }
     }
 }
