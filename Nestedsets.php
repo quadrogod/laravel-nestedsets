@@ -257,6 +257,8 @@ class Nestedsets {
      */
     public function deleteNode($item_id, $andChilds = true)
     {
+        \DB::beginTransaction(); // запуск транзакции
+        
         $this->selectCurrent($item_id);
         if($andChilds)
         {   // Удаляем весь узел (ветку) включая потомков:
